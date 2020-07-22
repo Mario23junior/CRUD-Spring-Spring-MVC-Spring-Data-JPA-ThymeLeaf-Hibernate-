@@ -28,10 +28,9 @@
                 <td th:text="${product.brand}">Brand</td>
                 <td th:text="${product.madein}">Made in</td>
                 <td th:text="${product.price}">Price</td>
-                <td>
-                
-                </td>
-            </tr>
+                    <td><a th:href="@{/edit/} + ${product.id}">Editar</a>
+  					<a th:href="@{/delete/} + ${product.id}">Eliminar</a></td>
+             </tr>
         </tbody>
     </table>
 </div>   
