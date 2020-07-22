@@ -10,14 +10,14 @@
     <h1>Product List</h1>
     <a href="/new">Create New Product</a>
     <br/><br/>
-    <table border="1">
+    <table border="1" cellpadding="10">
         <thead>
             <tr>
                 <th>Product ID</th>
-                <th>Name</th>
-                <th>Brand</th>
-                <th>Made In</th>
-                <th>Price</th>
+                <th>Nome do Produto:</th>
+                <th>Marca:</th>
+                <th>Criado em:</th>
+                <th>Preço:</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -29,11 +29,10 @@
                 <td th:text="${product.madein}">Made in</td>
                 <td th:text="${product.price}">Price</td>
                 <td>
-                  
+                
                 </td>
             </tr>
         </tbody>
     </table>
 </div>   
 </body>
-</html>
